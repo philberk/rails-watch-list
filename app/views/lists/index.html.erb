@@ -1,1 +1,63 @@
-<h1> test 1 2 3 </h1>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/004/796/030/small/illustration-graphic-of-popcorn-logo-free-vector.jpg" />
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+             <%= link_to 'My List', lists_path %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'New List', new_list_path %>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li>
+          <!--li class="nav-item"-->
+          <!--/li-->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);">
+  <div class="container">
+    <h1>Save any kind of  <strong>movies </strong>!</h1>
+    <p>Pick your choice from a variety of movies genres </p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+</div>
+
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/09/14/996070-montylov-royaidnvbbu-unsplash.jpg)">
+    Thriller
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://pbblogassets.s3.amazonaws.com/uploads/2015/03/header-image-337757.jpg)">
+    Documentaries
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://miro.medium.com/max/500/1*xDIevNE7HEMiJQVTYg0qDQ.png)">
+    Comedies
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+</div>

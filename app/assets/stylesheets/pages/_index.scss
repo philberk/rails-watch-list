@@ -1,2 +1,125 @@
 // Import page-specific CSS files here.
 @import "home";
+.navbar {
+  height:7vh;
+  display: relative;
+  a {
+    text-decoration: none;
+    color:gray;
+    display: space-between;
+    padding-left: 25px;
+  }
+}
+
+.banner {
+  height: 50vh;
+  display: relative;
+  background-position: center;
+  opacity: 0.9;
+  h1 {
+    color:white;
+    padding-top: 25px;
+    display: absolute;
+    text-align: center;
+  }
+  p {
+    color: white;
+    display: absolute;
+    padding-top: 100px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  height: 30vh;
+  display: relative;
+  margin-top: 10px;
+  .card-category {
+    background-position: center;
+    color: white;
+    border: white 1px solid;
+    display: absolute;
+    text-align: center;
+    opacity: 1;
+    background-position: cover;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+.footer {
+  background: #f4f4f4d7;
+  display: relative;
+  height: 55vh;
+  display: flex;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  display: absolute;
+  text-align: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  display: absolute;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
