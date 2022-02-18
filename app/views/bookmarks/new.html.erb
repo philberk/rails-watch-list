@@ -1,7 +1,7 @@
-<h1>Add movie to your list<%= @movie.name %></h1>
+<h1>Add movie to your list </h1>
 
-<%= simple_form_for [@movie, @review] do |f|   %>
-  <%= f.input :content %>
-  <%= f.input :rating %>
+<%= simple_form_for [@list, @bookmark] do |f|   %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
   <%= f.submit %>
 <% end %>
