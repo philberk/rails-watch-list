@@ -44,6 +44,10 @@
 
 
 <div class="cards">
+  <h1>Created Lists </h1><%@lists. each do |list| %>
+
+  <li> <%=link_to list.name, list_path(list) %> </li>
+  <%end%>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/09/14/996070-montylov-royaidnvbbu-unsplash.jpg)">
     Thriller
   </div>
