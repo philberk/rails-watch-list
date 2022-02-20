@@ -43,14 +43,14 @@
 </form>
 
 
-<div class="cards">
-  <h1>Created Lists </h1><%@lists. each do |list| %>
+ <h1>Created Lists </h1><%@lists. each do |list| %>
 
   <li> <%=link_to list.name, list_path(list) %> </li>
-  <%end%>
+    <%end%>
+    <div class="cards">
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/09/14/996070-montylov-royaidnvbbu-unsplash.jpg)">
-    Thriller
-  </div>
+  Thriller </div>
+
 
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://pbblogassets.s3.amazonaws.com/uploads/2015/03/header-image-337757.jpg)">
     Documentaries
@@ -71,3 +71,24 @@
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
 </div>
+
+
+
+<!--
+
+
+          ! to understand link to.
+<ul>
+<li><%= link_to "add new list", new_list_path %></li>
+</ul>
+
+
+
+          ! to understand params
+<form action= "lists/new" method ="get">
+<input type ="text" name="member" placeholder= "what movie are you looking for?">
+<input type= "submit">
+</form>
+
+
+-->
